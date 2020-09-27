@@ -1,0 +1,72 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+}
+
+body{
+    font-family: 'Poppins', sans-serif;
+    background: rgba(0, 0, 0, 0) linear-gradient(328deg, rgb(60, 107, 94) 0%, rgb(59, 164, 160) 90%) no-repeat fixed 0 0;
+}
+
+.title{
+    font-size: 60px;
+    width: 100%;
+    text-align: center;
+    margin-top: 3%;
+    text-shadow: 1px 1px white;
+}
+
+.score-wrapper{
+    text-align: center;
+    font-size: 25px;
+}
+
+.row{
+    display: flex;
+    flex-direction: row;
+}
+
+.tictactoe-wrapper{
+    width: 30%;
+    position: relative;
+    top: 30%;
+    left: 35%;
+    background: rgba(0, 0, 0, 0) linear-gradient(328deg, rgb(15, 64, 136) 34%, rgb(51, 117, 153) 82%) no-repeat fixed 0 0;
+    font-size: 100px;
+    box-shadow: 3px 3px 93px black;
+    margin: 2% 0;
+    border-radius: 15px;
+}
+
+.button{
+    text-align: center;
+    width: 25%;
+    border-radius: 15px;
+    background: #2980b9;
+    margin: 2% auto;
+    padding: 1%;
+    color: #2d628c;
+    text-shadow: 4px 0 #2f95d7;
+    cursor: pointer;
+    transition: .3s;
+}
+
+.button:hover{
+    background: #153e58;
+}
+
+@media (max-width: 600px) {
+    .tictactoe-wrapper{
+        width: 65%;
+        font-size: 50px;
+        padding: 2%;
+        left: 16%;
+        top: 40%;
+    }
+    
+    .button{
+        margin: 3% auto;
+    }
+}
