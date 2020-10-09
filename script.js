@@ -97,6 +97,7 @@ function checkValid(numOne, numTwo, numThree) {
         alert("X is the winner");
         x++;
         xScore.innerHTML = "X Score: " + x;
+        moveCount = 0;
         return true;
     }
     
@@ -105,6 +106,7 @@ function checkValid(numOne, numTwo, numThree) {
         alert("O is the winner");
         o++;
         oScore.innerHTML = "O Score: " + o;
+        moveCount = 0;
         return true;
     }
     return false;
